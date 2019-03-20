@@ -73,6 +73,9 @@
                     Copyright &copy; {{ site.title }} {{ site.time | date: '%Y' }}
                     <br>
                     Theme by <a href="http://huangxuan.me">Hux</a> |
+                    <BR>
+                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+                    <span id="busuanzi_container_site_uv">总访客量：<span id="busuanzi_value_site_uv"></span>人次</span>
                     <iframe
                         style="margin-left: 2px; margin-bottom:-5px;"
                         frameborder="0" scrolling="0" width="91px" height="20px"
@@ -80,9 +83,7 @@
                     </iframe>
                 </p>
                 <p>
-                    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-                    <span id="busuanzi_container_site_uv">访客量：<span id="busuanzi_value_site_uv"></span>人次</span>
-                </p>
+                   </p>
             </div>
         </div>
     </div>
@@ -145,7 +146,7 @@
 
 <!--fastClick.js -->
 <script>
-    async("http://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
         var $nav = document.querySelector("nav");
         if($nav) FastClick.attach($nav);
     })
