@@ -13,12 +13,12 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 future: true
 # SNS settings
 RSS: false
-# weibo_username:     huxpro
-# zhihu_username:     huxpro
+# weibo_username:
+# zhihu_username:
 github_username:    mamenglong
 csdn_username:      smallbabylong
-#twitter_username:  huxpro
-# facebook_username:  huxpro
+#twitter_username:
+# facebook_username:
 
 
 
@@ -34,7 +34,8 @@ anchorjs: true                          # if you want to customize anchor. check
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
-gems: [jekyll-paginate]
+#Deprecation: The 'gems' configuration option has been renamed to 'plugins'. Please update your config file accordingly.
+plugins: [jekyll-paginate]
 
 
 
