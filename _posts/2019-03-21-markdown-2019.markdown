@@ -4,7 +4,7 @@ title:      "Markdown 使用介绍"
 subtitle:   " \"Something about how to use markdown.\""
 date:       2019-03-21 12:00:00
 author:     "ML"
-header-img: "img/post-bg-2019.jpg"
+header-img: "/img/post-bg-2019.jpg"
 tags:
     - 小知识
     - markdown
