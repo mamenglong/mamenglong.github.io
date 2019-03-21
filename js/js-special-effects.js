@@ -182,6 +182,11 @@ var TimeClockJS = (function () {
                 var weekDays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
                 datefmt = fymd + " " + hms + " " + weekDays[weekDay];
                 break;
+            case "cn-full":
+                var cnWeekDays = ["日", "一", "二", "三", "四", "五", "六"];
+                datefmt = "星期" + cnWeekDays[weekDay];
+                datefmt = fymd + " " + hms + " " + datefmt;
+                break;
             case "yyyy-mm-dd h:i:s" :
             default:
                 datefmt = fymd + " " + hms;
