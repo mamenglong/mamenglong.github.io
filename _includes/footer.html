@@ -96,10 +96,15 @@
             </div>
         </div>
     </div>
+    <div id="div_toTop">
+        <a href="javascript:void(0)" id="toTop" style="display: none;" title="点击返回顶部">top</a>
+    </div>
+
 </footer>
 
 <!-- jQuery -->
 <script src="{{ '/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>-->
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{ '/js/bootstrap.min.js' | prepend: site.baseurl }}"></script>
@@ -109,7 +114,8 @@
 
 
 <!-- async load function -->
-<script>
+<script type="text/javascript">
+
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),
