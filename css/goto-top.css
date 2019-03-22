@@ -17,3 +17,37 @@
 #toTop:hover {
     box-shadow: 0px 0px 2px 3px #5fe22a;
 }
+
+#qrShare {
+    text-decoration: none;
+    position: fixed;
+    bottom: 58px;
+    right: 10px;
+    overflow: hidden;
+    width: 48px;
+    height: 48px;
+    border: none;
+    text-indent: 100%;
+    background: url(/img/share.png) no-repeat #e2570c;
+    text-align: center;
+    outline: -webkit-focus-ring-color auto 10px;
+}
+
+#qrShare :hover {
+    box-shadow: 0px 0px 2px 3px #44e226;
+}
+
+#div_qr {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 110px;
+    right: 10px;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: none;
+    text-indent: 100%;
+    text-align: center;
+    outline: -webkit-focus-ring-color auto 10px;
+}

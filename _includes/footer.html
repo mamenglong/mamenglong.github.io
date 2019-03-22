@@ -96,6 +96,13 @@
             </div>
         </div>
     </div>
+    <div>
+        <!--二维码-->
+        <div id="div_qr" onmouseup="this.show();"></div>
+        <a href="javascript:void(0)" id="qrShare" onmouseover="$('#div_qr').fadeIn(1500);"
+           onmouseout="$('#div_qr').fadeOut(1500);" title="手机查看"></a>
+    </div>
+    <!--返回顶部-->
     <div id="div_toTop">
         <a href="javascript:void(0)" id="toTop" style="display: none;" title="点击返回顶部">top</a>
     </div>
@@ -115,7 +122,13 @@
 
 <!-- async load function -->
 <script type="text/javascript">
-
+    var qrcode = new QRCode(document.getElementById("div_qr"), {
+        text: window.location.href,
+        width: 128,
+        height: 128,
+        colorDark: "#000000",
+        colorLight: "#ffffff"
+    });
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),
