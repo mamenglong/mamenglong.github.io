@@ -16,28 +16,31 @@ tags:
 > “Yeah It's on. ”
 # GSON Kotlin And TypeToken Retrofit
 ## Gson 解析对象
+
 - Kotlin中:
   - 第一种方式: 
   
     ```kotlin
-    val turnsType = object : TypeToken<List<Turns>>() {}.type
-    val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) //解析
+        val turnsType = object : TypeToken<List<Turns>>() {}.type
+        val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) //解析
     ```
+    
   - 第二种方式: 使用泛型
     
     ```kotlin
-    inline fun <reified T> genericType() = object: TypeToken<T>() {}.type
+       inline fun <reified T> genericType() = object: TypeToken<T>() {}.type
     //list对象    
-    val turnsType = genericType<List<Person>>()
-    val turns = Gson().fromJson<List<Person>>(jsonSTR, turnsType) //解析
-
+       val turnsType = genericType<List<Person>>()
+       val turns = Gson().fromJson<List<Person>>(jsonSTR, turnsType) //解析
     //对象    
-     val turnsType = genericType<Person>()
-    val turns = Gson().fromJson<Person>(jsonSTR, turnsType) //解析
-
+       val turnsType = genericType<Person>()
+       val turns = Gson().fromJson<Person>(jsonSTR, turnsType) //解析
     ```
+    
 --------------------- 
+
  ## Springboot 返回图片
+ 
  - 1.在springboot的application配置类中添加以下代码，使其支持图片返回，不然会报错，获取不到图片
     ```java
      @Bean
@@ -147,7 +150,7 @@ tags:
 - 使用
     ```java
     
-  //api
+      //api
         class BingInterface {
             interface BingService {
                 companion object {
@@ -158,6 +161,7 @@ tags:
                 fun getImageInfo(@Query("idx") index:Int, @Query("n") num:Int): Call<BingPicController.Images>
             }
         }
+      
       //同步
          HttpCreator
              .setIsUseLoggingInterceptor(true)
@@ -167,7 +171,8 @@ tags:
              .getImageInfo(-1,1)
              .execute()
              .body()
-           //异步
+           
+      //异步
          HttpCreator
               .setIsUseLoggingInterceptor(true)
               .setTimeOut(20L)
