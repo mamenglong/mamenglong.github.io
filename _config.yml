@@ -57,7 +57,7 @@ kramdown:
     span:
       line_numbers: false
     block:
-      line_numbers: true
+      line_numbers: false  # 样式有问题
       start_line: 1
 
 
