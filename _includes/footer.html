@@ -91,17 +91,18 @@
                 </p>
                 <p class="copyright text-muted">
                     <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+
                     <span id="busuanzi_container_site_uv">总访客量：<span id="busuanzi_value_site_uv"></span>人次</span>
                 </p>
             </div>
         </div>
     </div>
-    <div>
-        <!--二维码-->
-        <div id="div_qr" onmouseup="this.show();"></div>
-        <a href="javascript:void(0)" id="qrShare" onmouseover="$('#div_qr').fadeIn(1500);"
-           onmouseout="$('#div_qr').fadeOut(1500);" title="手机查看"></a>
-    </div>
+    <!--<div>-->
+    <!--&lt;!&ndash;二维码&ndash;&gt;-->
+    <!--<div id="div_qr"></div>-->
+    <!--<a href="javascript:void(0)" id="qrShare" onmouseover="$('#div_qr').fadeIn(1500);"-->
+    <!--onmouseout="$('#div_qr').fadeOut(1500);" title="手机查看"></a>-->
+    <!--</div>-->
     <!--返回顶部-->
     <div id="div_toTop">
         <a href="javascript:void(0)" id="toTop" style="display: none;" title="点击返回顶部">top</a>
@@ -122,13 +123,6 @@
 
 <!-- async load function -->
 <script type="text/javascript">
-    var qrcode = new QRCode(document.getElementById("div_qr"), {
-        text: window.location.href,
-        width: 128,
-        height: 128,
-        colorDark: "#000000",
-        colorLight: "#ffffff"
-    });
     function async(u, c) {
       var d = document, t = 'script',
           o = d.createElement(t),

@@ -13,6 +13,13 @@
             $('body,html').animate({scrollTop: 0}, 1000);
             return false;
         });
+        // var qrcode = new QRCode(document.getElementById("div_qr"), {
+        //     text: window.location.href,
+        //     width: 128,
+        //     height: 128,
+        //     colorDark: "#000000",
+        //     colorLight: "#ffffff"
+        // });
     });
 
 })(jQuery);

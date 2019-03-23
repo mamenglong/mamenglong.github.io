@@ -1,9 +1,9 @@
 {
-    "name": "ML's-blog",
+  "name": "mamenglong.github.io",
     "title": "ML's Blog",
     "version": "1.0.0",
     "homepage": "https://mamenglong.github.io",
-    "author": "",
+  "author": "ML",
     "devDependencies": {
         "grunt": "~0.4.5",
         "grunt-contrib-less": "~0.11.4",
@@ -17,6 +17,7 @@
     },
     "scripts": {
         "preview": "cd _site; python -m SimpleHTTPServer 8020",
-        "watch": "grunt watch & npm run preview & jekyll serve -w;"
+      "watch": "grunt watch & npm run preview & jekyll serve -w;",
+      "on": "jekyll serve -w"
     }
 }
