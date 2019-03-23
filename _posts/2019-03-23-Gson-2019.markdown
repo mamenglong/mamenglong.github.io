@@ -18,11 +18,13 @@ tags:
 ## Gson 解析对象
 - Kotlin中:
   - 第一种方式: 
+  
     ```kotlin
     val turnsType = object : TypeToken<List<Turns>>() {}.type
     val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) //解析
     ```
   - 第二种方式: 使用泛型
+    
     ```kotlin
     inline fun <reified T> genericType() = object: TypeToken<T>() {}.type
     //list对象    
