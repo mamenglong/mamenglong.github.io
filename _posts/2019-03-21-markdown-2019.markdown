@@ -12,7 +12,7 @@ tags:
 
 > “Yeah It's on. ”
 
-
+{:toc}
 # Markdown 使用介绍  
 
 - - -
@@ -68,7 +68,7 @@ tags:
 
 超链接和图片的写法类似，图片仅在超链接前多了一个 `!` ，一般是 [文字描述] (链接)  
 两种写法，分别是： [第一种写法](https://www.baidu.com/) 和 [第二种写法][1]  
-图片的话就比如这样： ![Image][2]  
+图片的话就比如这样： `![Image][2]` ![Image](https://www.zybuluo.com/static/img/logo.png)
 
 [1]: https://www.baidu.com/  
 [2]: https://www.zybuluo.com/static/img/logo.png  
@@ -141,7 +141,7 @@ tags:
 
 一些 IDE 支持行数提示和着色，一般使用三个 \` 表示，例如
 
-```
+```java
 public class HelloWorld
 {
     public static void main(String[] args)

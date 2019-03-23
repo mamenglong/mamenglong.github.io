@@ -7,7 +7,6 @@ author:     "ML"
 header-img: "/img/post-bg-2019.jpg"
 tags:
     - 搭建博客
-    - markdown
 ---
 
 > “Yeah It's on. ”
@@ -54,12 +53,12 @@ ML 的 Blog 就这么开通了。
 > [Ruby下载](https://rubyinstaller.org/downloads/)<br>
 > [Jekyllcn安装](http://jekyllcn.com/)
 
-```gem
+~~~ruby
     //源切换命令
     $ gem sources --remove https://rubygems.org/
     $ gem sources -a https://ruby.taobao.org/
     $ gem sources -l 
-```
+~~~
 
 ## 后记
 

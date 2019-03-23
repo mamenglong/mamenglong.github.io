@@ -118,6 +118,11 @@
             <PaintGroupHighlightMap />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/js/highlight.pack.js">
+          <value>
+            <PaintGroupHighlightMap />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/js/js-special-effects.js">
           <value>
             <PaintGroupHighlightMap />
