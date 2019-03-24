@@ -1,0 +1,91 @@
+---
+layout:     post
+title:      "Android Studio发布Library，可单独引入某个模块"
+subtitle:   " \"Something About Android Studio  tTo Publish A Library、.\""
+date:       2019-03-24 23:00:00
+author:     "ML"
+header-img: "/img/post-bg-2019.jpg"
+tags:
+    - 小知识
+    - Gradle
+    - Kotlin
+    - Android Studio
+    - 发布Library
+---
+> “Yeah It's on. ”
+
+# Android Studio发布Library，可单独引入某个模块
+- [创建Library](#id)
+- [总结](#summary)
+<p id = "top"></p>
+## 创建Library  
+- path:
+  > File->New->NewModule->Android Library or Java Library
+
+- 项目下build.gradle的pendencies中添加classpath:
+    ```gradle
+    dependencies {
+            ...
+            classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        }
+    ```
+    ------
+- 单个模块下的build.gradle下添加：
+    ```gradle
+    //必须
+        apply plugin: 'com.github.dcendents.android-maven'
+    //可自定义配置，配置以后可以单独指定这一个模块进行引入
+        project.archivesBaseName ='android'
+    ```
+- 发布release
+- 复制github上项目链接到[jitpack](https://jitpack.io)上输入进行get，以发布到jitpack
+- 引用
+  - To get a Git project into your build:
+    - Gradle
+      -   Step 1. Add the JitPack repository to your build file Add it
+          in your root build.gradle at the end of repositories:
+           ```
+             allprojects {
+                 repositories {
+                     ...
+                     maven { url 'https://jitpack.io' }
+                 }
+             }
+           ``` 
+        - Step 2. Add the dependency
+            ```
+                dependencies {
+                        implementation 'com.github.mamenglong.EasyUtils:android:Tag'
+                        or
+                        implementation 'com.github.mamenglong.EasyUtils:java:Tag'
+                }
+            ```    
+    - maven
+      - Step 1. Add the JitPack repository to your build file 
+          ```
+          <repositories>
+               <repository>
+                   <id>jitpack.io</id>
+                   <url>https://jitpack.io</url>
+               </repository>
+           </repositories>
+          ```
+      -  Step 2. Add the dependency 
+          ``` 
+          <dependency>
+              <groupId>com.github.mamenglong.EasyUtils</groupId>
+              <artifactId>android/java</artifactId>
+              <version>Tag</version>
+          </dependency>
+          ```
+          --------------------- 
+
+ <p id = "summary"></p>
+[Go To Top](#top)
+## 总结
+
+- 引入单个模块的思想主要是配置每个模块的archivesBaseName，所以我们可以做一个模块为ALL的，ALL模块的build.gradle下引入每个子模块，这样就可以实现既可以引入单个又可以引入全部。
+
+
+
+
