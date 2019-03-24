@@ -1,0 +1,85 @@
+---
+layout:     post
+title:      "Git使用ssh进行连接的配置过程"
+subtitle:   " \"Something About how to use Git by ssh .\""
+date:       2019-03-24 23:00:00
+author:     "ML"
+header-img: "/img/post-bg-2019.jpg"
+tags:
+    - 小知识
+    - Git
+    - SSH
+    - GitHub
+---
+
+> “Yeah It's on. ”
+<p id = "top"></p>
+
+# Git使用ssh进行连接的配置过程
+- [安装Git](#top)
+- [配置](#config)
+- [参考](#summary)
+
+
+## 安装Git 
+> git下载：https://www.git-scm.com/download/
+<p id = "config"></p>
+
+## 配置
+- 配置全局属性:
+  ```git
+    //github用户名
+    $ git config --global user.name "xxx"
+    //github注册邮箱
+    $ git config --global user.email "xxx@xxx.com"
+  ```
+### 生成SSH密钥
+   - 查询本机是否有密匙：   命令：`cd ~/.ssh`
+   1. 打开Git Bash
+   2. 粘贴下面的文本，替换您的GitHub电子邮件地址
+    `$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
+    这将使用提供的电子邮件作为标签创建一个新的ssh密钥。
+     `> Generating public/private rsa key pair.`
+   3. 当系统提示您“输入要保存密钥的文件”时，按Enter键。这接受默认文件位置。
+   `> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]`
+   4. 在提示符下，键入安全密码,也可以不输入。有关更多信息，请参阅“[使用SSH密钥密码](https://help.github.com/en/articles/working-with-ssh-key-passphrases)”。
+
+      `> Enter passphrase (empty for no passphrase): [Type a passphrase]`
+
+      `> Enter same passphrase again: [Type passphrase again]`
+
+### 将SSH密钥添加到ssh-agent
+
+1. 启动ssh-agent
+    ```git
+        # start the ssh-agent in the background
+        $ eval $(ssh-agent -s)
+        > Agent pid 59566
+    ```
+2. 将SSH私钥添加到ssh-agent。如果使用其他名称创建密钥，或者要添加具有不同名称的现有密钥，请将命令中的id_rsa替换为私钥文件的名称。
+        ```
+            $ ssh-add ~/.ssh/id_rsa
+        ```
+3. 将SSH密钥添加到您的GitHub帐户
+    > 参考连接：[将SSH密钥添加到您的GitHub帐户](https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account)   
+
+### 测试连接
+- .测试：ssh git@github.com
+
+    ```
+        The authenticity of host ‘github.com (207.97.227.239)’ can’t be established.
+        RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+        Are you sure you want to continue connecting (yes/no)? yes
+        Warning: Permanently added ‘github.com,207.97.227.239′ (RSA) to the list of known hosts.
+        ERROR: Hi tekkub! You’ve successfully authenticated, but GitHub does not provide shell access
+        Connection to github.com closed.
+    ```
+ <p id = "summary"></p>
+
+[Go To Top](#top)
+##  参考连接
+> [Connecting to GitHub with SSH](https://help.github.com/en/articles/connecting-to-github-with-ssh) 
+
+
+
+

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa953fd5-2c54-4405-99de-2557363c4679" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="fa953fd5-2c54-4405-99de-2557363c4679" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,23 +10,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="75">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_layouts/post.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="187" selection-start-line="187" selection-end-line="187" />
-              <folding>
-                <element signature="n#div#0;n#header#0;n#!!top" />
-                <element signature="n#article#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#!!top" expanded="true" />
-                <element signature="n#section#0;n#div#1;n#div#0;n#div#0;n#article#0;n#!!top" />
-                <element signature="n#script#0;n#!!top" />
-                <element signature="n#script#1;n#!!top" />
-                <element signature="n#script#2;n#!!top" />
-                <element signature="n#script#3;n#!!top" />
-                <element signature="n#style#1;n#!!top" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/_posts/2019-03-23-Gradle-2019.markdown">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="50">
+                <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -116,6 +106,7 @@
         <option value="$PROJECT_DIR$/_posts/2019-03-21-hello-2019.markdown" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2019-03-23-Gson-2019.markdown" />
+        <option value="$PROJECT_DIR$/_posts/2019-03-23-Gradle-2019.markdown" />
       </list>
     </option>
   </component>
@@ -138,7 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,6 +165,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -230,6 +221,7 @@
       <workItem from="1553325113079" duration="10447000" />
       <workItem from="1553356236963" duration="2481000" />
       <workItem from="1553401273068" duration="2264000" />
+      <workItem from="1553433515965" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="fav图标">
       <created>1553087011880</created>
@@ -413,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553358639413</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add:&#10;modify:null&#10;remove:null">
+      <created>1553433613990</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1553433613990</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61696000" />
+    <option name="totallyTimeSpent" value="61818000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,8 +429,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22012103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -556,20 +556,12 @@
     <MESSAGE value="add:&#10;1.share me at the bottom of article and index&#10;2.function pageviews &#10;3.tag number&#10;modify:null&#10;remove:function share by qrcode button" />
     <MESSAGE value="add:kmarkdown 高亮语法&#10;modify:null&#10;remove:null" />
     <MESSAGE value="add:article&#10;modify:null&#10;remove:null" />
-    <option name="LAST_COMMIT_MESSAGE" value="add:article&#10;modify:null&#10;remove:null" />
+    <MESSAGE value="add:&#10;modify:null&#10;remove:null" />
+    <option name="LAST_COMMIT_MESSAGE" value="add:&#10;modify:null&#10;remove:null" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -865,8 +857,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
+        <state relative-caret-position="1150">
+          <caret line="246" column="27" selection-start-line="246" selection-start-column="27" selection-end-line="246" selection-end-column="27" />
           <folding>
             <element signature="n#div#0;n#header#0;n#!!top" />
             <element signature="n#article#0;n#!!top" />
@@ -878,6 +870,16 @@
             <element signature="n#script#3;n#!!top" />
             <element signature="n#style#1;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-03-23-Gradle-2019.markdown">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="50">
+            <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
