@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "Android Studio发布Library，可单独引入某个模块"
-subtitle:   " \"Something About Android Studio  tTo Publish A Library、.\""
+subtitle:   " \"Something About Android Studio  To Publish A Library.\""
 date:       2019-03-24 23:00:00
 author:     "ML"
 header-img: "/img/post-bg-2019.jpg"

@@ -1,0 +1,36 @@
+---
+layout:     post
+title:      "编程中好用的模块推荐"
+subtitle:   " \"Something About easy using module.\""
+date:       2019-04-08 23:00:00
+author:     "ML"
+header-img: "/img/post-bg-2019.jpg"
+tags:
+    - 小知识
+    - collect
+---
+
+> “Yeah It's on. ”
+<p id = "top"></p>
+
+# 编程中好用的模块推荐
+
+- 网络访问框架：[fuel](https://github.com/kittinunf/fuel)
+- 图片加载框架：
+    - [Glide](https://github.com/bumptech/glide)
+    - [文字图：TextDrawable](https://github.com/amulyakhare/TextDrawable)
+    - 缩略图与原图的无缝转换:[transferee](https://github.com/Hitomis/transferee)
+- 权限请求框架：
+    - [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)
+    - [RxPermissions](https://github.com/tbruyelle/RxPermissions)
+- 布局框架：
+    - 随意变化的气泡布局：[HappyBubble](https://github.com/xujiaji/HappyBubble)
+    - 菜单boom布局：[BoomMenu](https://github.com/Nightonke/BoomMenu)
+    - 文字跑马灯效果：[MarqueeViewLibrary](https://github.com/gongwen/MarqueeViewLibrary)
+    - 弹窗:[smart-show](https://github.com/the-pig-of-jungle/smart-show)
+    - viewpage无限循环：[CardSlideView](https://github.com/crazysunj/CardSlideView)
+    - 使用引导：[TapTargetView](https://github.com/KeepSafe/TapTargetView)
+- 工具框架：
+    - 监听进度：[ProgressManager](https://github.com/JessYanCoding/ProgressManager)
+    - 注解绑定view：[butterknife](https://github.com/JakeWharton/butterknife)
+    - 数据库框架：[LitePal](https://github.com/LitePalFramework/LitePal)
