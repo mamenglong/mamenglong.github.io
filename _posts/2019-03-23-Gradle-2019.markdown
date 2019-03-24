@@ -15,7 +15,6 @@ tags:
 > “Yeah It's on. ”
 <p id = "top"></p>
 
-
 # Android Studio发布Library，可单独引入某个模块
 - [创建Library](#top)
 - [总结](#summary)
