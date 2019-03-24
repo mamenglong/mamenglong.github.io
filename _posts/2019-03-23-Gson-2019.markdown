@@ -14,6 +14,7 @@ tags:
 ---
 {:toc}
 > “Yeah It's on. ”
+
 # GSON Kotlin And TypeToken Retrofit
 ## Gson 解析对象
 
@@ -22,7 +23,7 @@ tags:
   
     ```kotlin
         val turnsType = object : TypeToken<List<Turns>>() {}.type
-        val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) //解析
+        val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) 
     ```
     
   - 第二种方式: 使用泛型
@@ -31,15 +32,15 @@ tags:
        inline fun <reified T> genericType() = object: TypeToken<T>() {}.type
     //list对象    
        val turnsType = genericType<List<Person>>()
-       val turns = Gson().fromJson<List<Person>>(jsonSTR, turnsType) //解析
+       val turns = Gson().fromJson<List<Person>>(jsonSTR, turnsType) 
     //对象    
        val turnsType = genericType<Person>()
-       val turns = Gson().fromJson<Person>(jsonSTR, turnsType) //解析
+       val turns = Gson().fromJson<Person>(jsonSTR, turnsType) 
     ```
     
 --------------------- 
 
- ## Springboot 返回图片
+## Springboot 返回图片
  
  - 1.在springboot的application配置类中添加以下代码，使其支持图片返回，不然会报错，获取不到图片
     ```java
@@ -48,6 +49,7 @@ tags:
             return new BufferedImageHttpMessageConverter();
         }
     ```
+
  - 2.controller中主要配置GetMapping的produces，使其允许返回图片类型
     ```java
        @GetMapping("/getBingPic", produces = [MediaType.IMAGE_JPEG_VALUE])
@@ -60,6 +62,7 @@ tags:
             return ImageIO.read(input)
         }
     ```
+
  - 3.注意如果是网络图片应该使用另一种方式读写，否则会出现 (文件名、目录名或卷标语法不正确。)
     ```java
      //网络路径读写
@@ -149,8 +152,7 @@ tags:
     ```
 - 使用
     ```java
-    
-      //api
+    //api
         class BingInterface {
             interface BingService {
                 companion object {
@@ -162,8 +164,8 @@ tags:
             }
         }
       
-      //同步
-         HttpCreator
+    //同步
+        HttpCreator
              .setIsUseLoggingInterceptor(true)
              .setTimeOut(20L)
              .setBaseURL(BingInterface.BingService.BASE_URL)
@@ -172,22 +174,23 @@ tags:
              .execute()
              .body()
            
-      //异步
-         HttpCreator
-              .setIsUseLoggingInterceptor(true)
-              .setTimeOut(20L)
-              .setBaseURL(BingInterface.BingService.BASE_URL)
-              .create(BingInterface.BingService::class.java)
-              .getImageInfo(-1,1).enqueue(object :Callback<Images>(){
-                  override fun onFailure(call: Call<Images>, t: Throwable) {
-                      TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                  }
+    //异步
+        HttpCreator
+            .setIsUseLoggingInterceptor(true)
+            .setTimeOut(20L)
+            .setBaseURL(BingInterface.BingService.BASE_URL)
+            .create(BingInterface.BingService::class.java)
+            .getImageInfo(-1,1).enqueue(object :Callback<Images>(){
+                 override fun onFailure(call: Call<Images>,
+                 t: Throwable) {
+                    TODO("not implemented")  
+                }
          
-                  override fun onResponse(call: Call<Images>, response: Response<Images>) {
-                      TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-                  }
+                override fun onResponse(call: Call<Images>, response: Response<Images>) {
+                    TODO("not implemented")  
+                }
          
-              })
+            })
     ```
  
 
