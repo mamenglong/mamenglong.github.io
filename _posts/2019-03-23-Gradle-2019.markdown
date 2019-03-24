@@ -13,11 +13,12 @@ tags:
     - 发布Library
 ---
 > “Yeah It's on. ”
+<p id = "top"></p>
 
 # Android Studio发布Library，可单独引入某个模块
-- [创建Library](#id)
+- [创建Library](#top)
 - [总结](#summary)
-<p id = "top"></p>
+
 ## 创建Library  
 - path:
   > File->New->NewModule->Android Library or Java Library
@@ -81,6 +82,7 @@ tags:
           --------------------- 
 
  <p id = "summary"></p>
+
 [Go To Top](#top)
 ## 总结
 
