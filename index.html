@@ -20,6 +20,7 @@ description: "写写Bug，看看你。"
     </a>
     <p class="post-meta">
         Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        字数：{{ content | strip_html | strip_newlines | split: "" | size }}  
     </p>
 </div>
 <hr>
