@@ -26,7 +26,7 @@ tags:
   > File->New->NewModule->Android Library or Java Library
 
 - 项目下build.gradle的pendencies中添加classpath:
-    ```gradle
+    ```
     dependencies {
             ...
             classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
@@ -34,7 +34,7 @@ tags:
     ```
     ------
 - 单个模块下的build.gradle下添加：
-    ```gradle
+    ```
     //必须
         apply plugin: 'com.github.dcendents.android-maven'
     //可自定义配置，配置以后可以单独指定这一个模块进行引入

@@ -21,14 +21,14 @@ tags:
 - Kotlin中:
   - 第一种方式: 
   
-    ```kotlin
+    ```
         val turnsType = object : TypeToken<List<Turns>>() {}.type
         val turns = Gson().fromJson<List<Turns>>(pref.turns, turnsType) 
     ```
     
   - 第二种方式: 使用泛型
     
-    ```kotlin
+    ```
        inline fun <reified T> genericType() = object: TypeToken<T>() {}.type
     //list对象    
        val turnsType = genericType<List<Person>>()
@@ -43,7 +43,7 @@ tags:
 ## Springboot 返回图片
  
  - 1.在springboot的application配置类中添加以下代码，使其支持图片返回，不然会报错，获取不到图片
-    ```java
+    ```
      @Bean
         public BufferedImageHttpMessageConverter bufferedImageHttpMessageConverter() {
             return new BufferedImageHttpMessageConverter();
@@ -51,7 +51,7 @@ tags:
     ```
 
  - 2.controller中主要配置GetMapping的produces，使其允许返回图片类型
-    ```java
+    ```
        @GetMapping("/getBingPic", produces = [MediaType.IMAGE_JPEG_VALUE])
         @ResponseBody
         fun bingPic(): BufferedImage {
@@ -64,7 +64,7 @@ tags:
     ```
 
  - 3.注意如果是网络图片应该使用另一种方式读写，否则会出现 (文件名、目录名或卷标语法不正确。)
-    ```java
+    ```
      //网络路径读写
      val url = URL(path)
      val input = BufferedInputStream(url.openStream())
@@ -75,8 +75,7 @@ tags:
 
 ## Retrofit 请求网络
 - 工具类
-    ```kotlin
-     
+    ```
     import okhttp3.OkHttpClient
     import okhttp3.logging.HttpLoggingInterceptor
     import retrofit2.Retrofit
@@ -151,7 +150,7 @@ tags:
     
     ```
 - 使用
-    ```java
+    ```
     //api
         class BingInterface {
             interface BingService {

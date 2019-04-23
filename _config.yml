@@ -52,12 +52,12 @@ kramdown:
     - footnotes
     - smart
   #  coderay_default_lang: java    #设置突出显示代码块的默认语言
-  #  coderay_line_number_start: 1  # 行号的起始值
+  coderay_line_number_start: 1  # 行号的起始值
   syntax_highlighter_opts:
     span:
-      line_numbers: false
+      line_numbers: true
     block:
-      line_numbers: false  # 样式有问题
+      line_numbers: true  # 样式有问题
       start_line: 1
 
 

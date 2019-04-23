@@ -27,7 +27,7 @@ tags:
 
 ## 配置
 - 配置全局属性:
-  ```git
+  ```
     //github用户名
     $ git config --global user.name "xxx"
     //github注册邮箱
@@ -51,7 +51,7 @@ tags:
 ### 将SSH密钥添加到ssh-agent
 
 1. 启动ssh-agent
-    ```git
+    ```
         # start the ssh-agent in the background
         $ eval $(ssh-agent -s)
         > Agent pid 59566
