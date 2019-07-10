@@ -32,9 +32,7 @@ tags:
 
 > 自定义view实现，参考方式二实现方式，代码如下，重写onSizeChanged设置一些基本参数，在onDraw方法中绘制图层，通过改变Shader实现，最后通过postInvalidateDelayed方法进行重绘图层。
 
-``` android
-package com.romainpiel.shimmer;
-
+```java
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -99,7 +97,6 @@ public class Test extends TextView {
 ### 扩展
 
 * Shader知识点
-
     + [Paint#setShader](https://www.jianshu.com/p/6ab058329ca8)
     + [自定义控件之Shader(着色器/渲染器)](https://blog.csdn.net/asd7364645/article/details/52761204)
     + [Android笔记：invalidate()和postInvalidate() 的区别及使用](https://blog.csdn.net/Mars2639/article/details/6650876)
