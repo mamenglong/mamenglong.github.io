@@ -99,5 +99,6 @@ public class Test extends TextView {
 * Shader知识点
     + [Paint#setShader](https://www.jianshu.com/p/6ab058329ca8)
     + [自定义控件之Shader(着色器/渲染器)](https://blog.csdn.net/asd7364645/article/details/52761204)
+    + [Android中的LinearGradient](https://www.jianshu.com/p/a9d09cb7577f)
     + [Android笔记：invalidate()和postInvalidate() 的区别及使用](https://blog.csdn.net/Mars2639/article/details/6650876)
     + [Android自定义View之invalidate方法和postInvalidate方法](https://www.jianshu.com/p/f2b51180b705)
