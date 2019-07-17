@@ -132,6 +132,7 @@ import com.xjlmh.classic.instrument.log.DebugLog
 class Shimmer() : ShimmerStyle {
 
 
+
     private var mLinearGradient: LinearGradient? = null
     private var mGradientMatrix: Matrix? = null
     var mPaint = Paint()
@@ -139,12 +140,13 @@ class Shimmer() : ShimmerStyle {
     private var isAnimating = true
     private var mTranslate = 0
     var mWidthDivideBy = 5
-    val DEFAULT_COLORS = intArrayOf(0xff00ffff.toInt(), 0xffffffff.toInt(), 0xff00ffff.toInt())
-    val DEFAULT_POSITIONS = floatArrayOf(0.0f, 0.5f, 1.0f)
+    private val DEFAULT_COLORS = intArrayOf(0xff00ffff.toInt(), 0xffffffff.toInt(), 0xff00ffff.toInt())
+    private val DEFAULT_POSITIONS = floatArrayOf(0.0f, 0.5f, 1.0f)
+    private val DEFAULT_SHADER_TILEMODE=Shader.TileMode.CLAMP
     private var colors = DEFAULT_COLORS//intArrayOf(0xff00ffff.toInt(), 0xffffffff.toInt(), 0xff00ffff.toInt())
     private var positions = DEFAULT_POSITIONS
     private var content: String = ""
-
+    private var tileMode:Shader.TileMode= DEFAULT_SHADER_TILEMODE
 
     /**
      * 构建基础数据
@@ -170,46 +172,31 @@ class Shimmer() : ShimmerStyle {
         }
         mPaint.shader = mLinearGradient
     }
-
+    override fun setShaderTileMode(tileMode: Shader.TileMode?) {
+        tileMode?.let {
+            this.tileMode=it
+            return
+        }
+        this.tileMode= DEFAULT_SHADER_TILEMODE
+    }
     override fun setLinearGradientColors(colors: IntArray?) {
         DebugLog.i("Shimmer", "setLinearGradientColors before:${this.colors.toList()}  ")
-        var count=0
-        if (colors != null) {
-            this.colors=colors
-//            colors.apply {
-//                forEach {
-//                    this@Shimmer.colors[count++] = it
-//                }
-//            }
-        } else {
-            this.colors=DEFAULT_COLORS
-//            DEFAULT_COLORS.apply {
-//                forEach {
-//                    this@Shimmer.colors[count++] = it
-//                }
-//            }
+        colors?.let {
+            this.colors=it
+            DebugLog.i("Shimmer", "setLinearGradientColors  after: ${this.colors.toList()}")
+            return
         }
-        DebugLog.i("Shimmer", "setLinearGradientColors  after: ${this.colors.toList()}")
+        this.colors=DEFAULT_COLORS
     }
 
     override fun setLinearGradientPositions(position: FloatArray?) {
         DebugLog.i("Shimmer", "setLinearGradientPositions before:${this.positions.toList()}  ")
-        if (position != null) {
-            this.positions=positions
-//            position.apply {
-//                forEach {
-//                    this@Shimmer.positions[indexOf(it)] = it
-//                }
-//            }
-        } else {
-            this.positions=DEFAULT_POSITIONS
-//            DEFAULT_POSITIONS.apply {
-//                forEach {
-//                    this@Shimmer.positions[indexOf(it)] = it
-//                }
-//            }
+        position?.let {
+            this.positions=it
+            DebugLog.i("Shimmer", "setLinearGradientPositions  after: ${this.positions.toList()}")
+            return
         }
-        DebugLog.i("Shimmer", "setLinearGradientPositions  after: ${this.positions.toList()}")
+        this.positions=DEFAULT_POSITIONS
     }
 
     override fun setAnimating(b: Boolean) {
@@ -222,7 +209,7 @@ class Shimmer() : ShimmerStyle {
         DebugLog.i("Shimmer", "setLinearGradient:$linearGradient")
         mLinearGradient = linearGradient ?: LinearGradient((-mViewWidth).toFloat(), 0f, 0f, 0f,
                 colors,
-                positions, Shader.TileMode.CLAMP)
+                positions,tileMode)
     }
 
     override fun setGradientMatrix(matrix: Matrix?) {
