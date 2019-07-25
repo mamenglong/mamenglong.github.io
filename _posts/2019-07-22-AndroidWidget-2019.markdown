@@ -1,5 +1,8 @@
+# Android桌面小部件开发(Widget)
+
 ---
-layout:     post
+
+layout: post
 title:      "AndroidWidget"
 subtitle:   " \"Android桌面小部件开发(Widget)\""
 date:       2019-07-22 14:00:00
@@ -7,9 +10,8 @@ author:     "ML"
 header-img: "/img/post-bg-2019.jpg"
 tags:
     - Android
----
 
-# Android桌面小部件开发(Widget)
+---
 
 * 新建布局在res/layout文件夹下定义一个 布局文件 
 res/layout/app_widget.xml
