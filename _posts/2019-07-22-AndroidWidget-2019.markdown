@@ -1,7 +1,4 @@
-# Android桌面小部件开发(Widget)
-
 ---
-
 layout: post
 title:      "AndroidWidget"
 subtitle:   " \"Android桌面小部件开发(Widget)\""
@@ -10,8 +7,9 @@ author:     "ML"
 header-img: "/img/post-bg-2019.jpg"
 tags:
     - Android
-
 ---
+
+# Android桌面小部件开发(Widget)
 
 * 新建布局在res/layout文件夹下定义一个 布局文件 
 res/layout/app_widget.xml
@@ -220,7 +218,7 @@ res/xml/desktop_widget_info.xml
 
 * 桌面插件只支持 RemoteView 要使用appWidgetManager 来更新的小部件.
 
-    ```java
+    ```xml
     RemoteView支持的控件
     FrameLayout
     LinearLayout
