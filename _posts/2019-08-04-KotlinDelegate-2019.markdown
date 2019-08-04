@@ -2,7 +2,7 @@
 layout:     post
 title:      "Kotlin使用Delegate,封装SharePreferences"
 subtitle:   " \"Kotlin委托的用法\""
-date:       2019-03-21 12:00:00
+date:       2019-08-04 12:00:00
 author:     "ML"
 header-img: "/img/post-bg-2019.jpg"
 tags:
