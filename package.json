@@ -16,8 +16,8 @@
         "url": "https://github.com/mamenglong/mamenglong.github.io"
     },
     "scripts": {
-        "preview": "cd _site; python -m SimpleHTTPServer 8020",
+        "preview": "cd _site; python -m SimpleHTTPServer 8020;",
       "watch": "grunt watch & npm run preview & jekyll serve -w;",
-      "on": "jekyll serve -w"
+      "on": "jekyll serve -w;"
     }
 }
