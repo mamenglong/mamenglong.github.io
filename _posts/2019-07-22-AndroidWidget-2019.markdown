@@ -70,7 +70,7 @@ res/xml/desktop_widget_info.xml
                     resizeMode		调整size模式,可在桌面调整大小
                     configure		如果需要在启动前先启动一个Activity进行设置，在这里给出Activity的完整类名
                     widgetCategory="keyguard|home_screen"  widget可添加的位置 锁屏界面|桌面
-
+                    android:initialKeyguardLayout ： 加载到锁屏界面时对应的布局文件
                     autoAdvanceViewId=@id/xx	与集合部件一起使用，指定该id所表示的集合的item自动推进
                     集合部件：3.0后才有。view：ListView、GridView、StackView、AdapterViewFilpper
                 --> 
@@ -83,10 +83,11 @@ res/xml/desktop_widget_info.xml
         minResizeHeight|能被调整的最小宽高，若大于minWidth minHeight 则忽略
         label|选择部件时看到标签
         icon|选择部件时看到图标
-        updatePeriodMillis	|更新时间间隔
+        updatePeriodMillis	|更新时间间隔，系统要求至少30分钟
         previewImage|选择部件时 展示的图像  3.0以上使用
         initialLayout|布局文件
-       resizeMode|调整size模式,可在桌面调整大小
+        initialKeyguardLayout|加载到锁屏界面时对应的布局文件
+        resizeMode|调整size模式,可在桌面调整大小
         configure|如果需要在启动前先启动一个Activity进行设置，在这里给出Activity的完整类名
         widgetCategory="keyguard|home_screen"  |widget可添加的位置 锁屏界面|桌面
         autoAdvanceViewId=@id/xx|与集合部件一起使用，指定该id所表示的集合的item自动推进集合部件：3.0后才有。view：ListView、GridView、StackView、AdapterViewFilpper
