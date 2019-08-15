@@ -15,22 +15,52 @@ tags:
 
 # 编程中好用的模块推荐
 
-- 网络访问框架：[fuel](https://github.com/kittinunf/fuel)
-- 图片加载框架：
-    - [Glide](https://github.com/bumptech/glide)
+* 网络访问框架：[fuel](https://github.com/kittinunf/fuel)
+
+* 图片
+  - 图片手势库:[PinchImageView](https://github.com/boycy815/PinchImageView)
+   - 加载框架: [Glide](https://github.com/bumptech/glide)
     - [文字图：TextDrawable](https://github.com/amulyakhare/TextDrawable)
     - 缩略图与原图的无缝转换:[transferee](https://github.com/Hitomis/transferee)
-- 权限请求框架：
+
+* 权限请求框架：
     - [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)
     - [RxPermissions](https://github.com/tbruyelle/RxPermissions)
-- 布局框架：
+    - [SoulPermission](https://github.com/soulqw/SoulPermission)
+* 布局框架：
+    + AndroidUi效果:[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)
+    + 爆炸图标特效:[ExplosionField](https://github.com/tyrantgit/ExplosionField)
+    + 仿qq聊天消息长按弹窗:[QPopuWindow](https://github.com/AndyAls/QPopuWindow)
+    + banner:[banner](https://github.com/youth5201314/banner)
+    + 多功能SeekBar:[BubbleSeekBar](https://github.com/woxingxiao/BubbleSeekBar) | [IndicatorSeekBar](https://github.com/warkiz/IndicatorSeekBar)
+    + 高级TabLayout:[FlycoTabLayout](https://github.com/H07000223/FlycoTabLayout)
+    - ViewPager 指示器框架:[MagicIndicator](https://github.com/hackware1993/MagicIndicator)
+    - 下拉刷新下拉加载:[XRecyclerView](https://github.com/XRecyclerView/XRecyclerView)
     - 随意变化的气泡布局：[HappyBubble](https://github.com/xujiaji/HappyBubble)
     - 菜单boom布局：[BoomMenu](https://github.com/Nightonke/BoomMenu)
     - 文字跑马灯效果：[MarqueeViewLibrary](https://github.com/gongwen/MarqueeViewLibrary)
+    - 文字图:[TextDrawable](https://github.com/amulyakhare/TextDrawable)
     - 弹窗:[smart-show](https://github.com/the-pig-of-jungle/smart-show)
     - viewpage无限循环：[CardSlideView](https://github.com/crazysunj/CardSlideView)
-    - 使用引导：[TapTargetView](https://github.com/KeepSafe/TapTargetView)
-- 工具框架：
+    - 使用引导：[TapTargetView](https://github.com/KeepSafe/TapTargetView) | [AppIntro](https://github.com/AppIntro/AppIntro)
+    - 上拉下拉弹跳效果弹跳布局:[SlidingLayout](https://github.com/HomHomLin/SlidingLayout)
+
+* 动画库
+    + Android Transitions 转场动画:[Transitions-Everywhere](https://github.com/andkulikov/Transitions-Everywhere)
+    + View动画库:[ViewAnimator](https://github.com/florent37/ViewAnimator)
+    + Activity动画:[Material-Animations](https://github.com/lgvalle/Material-Animations)
+* 工具框架：
+    + 富文本工具:[XRichText](https://github.com/sendtion/XRichText)
     - 监听进度：[ProgressManager](https://github.com/JessYanCoding/ProgressManager)
     - 注解绑定view：[butterknife](https://github.com/JakeWharton/butterknife)
-    - 数据库框架：[LitePal](https://github.com/LitePalFramework/LitePal)
+    - 数据库框架：[LitePal](https://github.com/LitePalFramework/LitePal) | [Kotlin SQL Library](https://github.com/JetBrains/Exposed)
+    + 选择器集合:[AndroidPicker](https://github.com/gzu-liyujiang/AndroidPicker)
+    - 颜色选择器:[ColorPicker](https://github.com/jaredrummler/ColorPicker)
+    + 时间选择器:[DatePicker](https://github.com/AigeStudio/DatePicker)
+    - App内置更新:[UpdateAppUtils](https://github.com/teprinciple/UpdateAppUtils)
+
+* 后端
+    + 接口管理:[yapi](https://github.com/YMFE/yapi)
+
+* Linux 
+    + 命令行神器:[thefuck](https://github.com/nvbn/thefuck)
