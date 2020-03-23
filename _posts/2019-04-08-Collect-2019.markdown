@@ -18,8 +18,30 @@ tags:
     - [ShimmerText](https://github.com/mamenglong/ShimmerText/tree/master/shimmerlibrary)
     - [AndroidConfig](https://github.com/mamenglong/AndroidConfig)
     - [EasyUtils](https://github.com/mamenglong/EasyUtils)
+
 * 网络访问框架：[fuel](https://github.com/kittinunf/fuel)
 
+* 学习笔记
+    - [ AndroidNote](https://github.com/GcsSloop/AndroidNote)
+        >安卓学习笔记
+    - [ AdvancedAndroid](https://github.com/SusionSuc/AdvancedAndroid)
+        >一系列Android进阶文章
+     - [ chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
+        >The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词
+    - [RxJavaInAction](https://github.com/fengzhizi715/RxJavaInAction)
+    - [androidProject](https://github.com/yipianfengye/androidProject)
+        >android产品研发过程中常用的技术，技巧，实践等
+    - [AndroidCustomView](https://github.com/lygttpod/AndroidCustomView)
+        >带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界
+    - [glide-docs-cn](https://github.com/Muyangmin/glide-docs-cn)
+        >Glide简体中文文档站点托管项目。
+ 
+* Windows 工具
+    -[FluentTerminal](https://github.com/felixse/FluentTerminal)
+        >FluentTerminal 可以实现Windows下tab补全
+    -[PowerShell](https://github.com/PowerShell/PowerShell)
+        >PowerShell
+   
 * 图片
   - 图片手势库:[PinchImageView](https://github.com/boycy815/PinchImageView)
    - 加载框架: [Glide](https://github.com/bumptech/glide)
@@ -30,6 +52,7 @@ tags:
     - [PermissionsDispatcher](https://github.com/permissions-dispatcher/PermissionsDispatcher)
     - [RxPermissions](https://github.com/tbruyelle/RxPermissions)
     - [SoulPermission](https://github.com/soulqw/SoulPermission)
+
 * 布局框架：
     + AndroidUi效果:[awesome-android-ui](https://github.com/wasabeef/awesome-android-ui)
     + 爆炸图标特效:[ExplosionField](https://github.com/tyrantgit/ExplosionField)
@@ -49,10 +72,19 @@ tags:
     - 使用引导：[TapTargetView](https://github.com/KeepSafe/TapTargetView) | [AppIntro](https://github.com/AppIntro/AppIntro)
     - 上拉下拉弹跳效果弹跳布局:[SlidingLayout](https://github.com/HomHomLin/SlidingLayout)
     - a super textview for android[SuperTextView](https://github.com/lygttpod/SuperTextView)
+    - [SketchyComponent](https://github.com/m-zylab/SketchyComponent)
+    - [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
+        >下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer
+   - [MarkdownView](https://github.com/Vove7/MarkdownView)
+   - [floating-action-button](https://github.com/futuresimple/android-floating-action-button)
+   - [ZoomRecylerLayout](https://github.com/Spikeysanju/ZoomRecylerLayout)
+   - [ExpandableRecyclerview](https://github.com/zaihuishou/ExpandableRecyclerview)
+
 * 动画库
     + Android Transitions 转场动画:[Transitions-Everywhere](https://github.com/andkulikov/Transitions-Everywhere)
     + View动画库:[ViewAnimator](https://github.com/florent37/ViewAnimator)
     + Activity动画:[Material-Animations](https://github.com/lgvalle/Material-Animations)
+    + [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
 
 * 工具框架：
     + 富文本工具:[XRichText](https://github.com/sendtion/XRichText)
@@ -64,10 +96,30 @@ tags:
     - 颜色选择器:[ColorPicker](https://github.com/jaredrummler/ColorPicker)
     + 时间选择器:[DatePicker](https://github.com/AigeStudio/DatePicker)
     - App内置更新:[UpdateAppUtils](https://github.com/teprinciple/UpdateAppUtils)
-
+    - [AgentWeb](https://github.com/Justson/AgentWeb)
+    - [ImmersionBar](https://github.com/gyf-dev/ImmersionBar)
+    - [屏幕适配 AndroidAutoSize](https://github.com/JessYanCoding/AndroidAutoSize)
+    - [图床 imgurl](https://github.com/helloxz/imgurl)
+* 合集
+    + [AndroidQuick](https://github.com/sdwfqin/AndroidQuick)
+        >做外包用的快速开发库--微信、支付宝支付（含签名，下单）、自定义View（验证码/密码，九宫格图片上传等）、换肤、图片预览、RxJava、EventBus、base层封装等
+    + [JustAuth](https://github.com/justauth/JustAuth)
+        > 史上最全的整合第三方登录的开源库。目前已支持Github、Gitee、微博、钉钉、百度、Coding、腾讯云开发者平台、OSChina、支付宝、QQ、微信、淘宝、Google、Facebook、抖音、领英、小米、微软、今日头条、Teambition、StackOverflow、Pinterest、人人、华为、企业微信、酷家乐、Gitlab、美团、饿了么和推特等第三方平台的授权登录
+  
+* 通信
+    - [LiveEventBus](https://github.com/JeremyLiao/LiveEventBus)
 
 * 后端
     + 接口管理:[yapi](https://github.com/YMFE/yapi)
+
+* 字体
+    + [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono)
+    + [FiraCode](https://github.com/tonsky/FiraCode)
+
+* 插件 
+    + [谷歌访问助手](https://github.com/haotian-wang/google-access-helper)
+    
+
 
 * Linux 
     + 命令行神器:[thefuck](https://github.com/nvbn/thefuck)
