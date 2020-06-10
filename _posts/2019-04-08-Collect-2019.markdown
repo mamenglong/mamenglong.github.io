@@ -22,19 +22,20 @@ tags:
 * 网络访问框架：[fuel](https://github.com/kittinunf/fuel)
 
 * 学习笔记
-    - [ AndroidNote](https://github.com/GcsSloop/AndroidNote)
-        >安卓学习笔记
-    - [ AdvancedAndroid](https://github.com/SusionSuc/AdvancedAndroid)
-        >一系列Android进阶文章
-     - [ chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)
-        >The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词
+    - []( )>
+    - []( )>
+    - [Blog](https://github.com/yangkun19921001/Blog)>Android 面试宝典、数据结构和算法、音视频 (FFmpeg、AAC、x264、MediaCodec)、 C/C++ 、OpenCV、跨平台等学习记录
+    - [Flutter 集录指南 App](https://github.com/toly1994328/FlutterUnit)>Flutter 集录指南 App
+    - [码上开学的各种文档集中地](https://github.com/kaixueio/kaixue-docs)>码上开学的各种文档集中地
+    - [UI2018 安卓高级UI代码整理和博客代码Demo](https://github.com/zincPower/UI2018)>安卓高级UI代码整理和博客代码Demo
+    - [ Android-Daily-Interview](https://github.com/Moosphan/Android-Daily-Interview)>每工作日更新一道 Android 面试题，小聚成河，大聚成江，共勉之～
+    - [ AndroidNote](https://github.com/GcsSloop/AndroidNote) > 安卓学习笔记
+    - [ AdvancedAndroid](https://github.com/SusionSuc/AdvancedAndroid)>一系列Android进阶文章
+    - [ chinese-poetry](https://github.com/chinese-poetry/chinese-poetry) >The most comprehensive database of Chinese poetry 🧶最全中华古诗词数据库, 唐宋两朝近一万四千古诗人, 接近5.5万首唐诗加26万宋诗. 两宋时期1564位词人，21050首词
     - [RxJavaInAction](https://github.com/fengzhizi715/RxJavaInAction)
-    - [androidProject](https://github.com/yipianfengye/androidProject)
-        >android产品研发过程中常用的技术，技巧，实践等
-    - [AndroidCustomView](https://github.com/lygttpod/AndroidCustomView)
-        >带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界
-    - [glide-docs-cn](https://github.com/Muyangmin/glide-docs-cn)
-        >Glide简体中文文档站点托管项目。
+    - [androidProject](https://github.com/yipianfengye/androidProject) >android产品研发过程中常用的技术，技巧，实践等
+    - [AndroidCustomView](https://github.com/lygttpod/AndroidCustomView)>带你在实战中学习自定义view，通过几个完整的例子带你走进自定义View的美妙世界
+    - [glide-docs-cn](https://github.com/Muyangmin/glide-docs-cn)>Glide简体中文文档站点托管项目。
  
 * Windows 工具
     -[FluentTerminal](https://github.com/felixse/FluentTerminal)
@@ -79,14 +80,27 @@ tags:
    - [floating-action-button](https://github.com/futuresimple/android-floating-action-button)
    - [ZoomRecylerLayout](https://github.com/Spikeysanju/ZoomRecylerLayout)
    - [ExpandableRecyclerview](https://github.com/zaihuishou/ExpandableRecyclerview)
-
+   - [CornerSheet](https://github.com/HeyAlex/CornerSheet)
+   - [RealtimeBlurView](https://github.com/mmin18/RealtimeBlurView)模糊view
+   - [CircleRecyclerView](https://github.com/kHRYSTAL/CircleRecyclerView)
+   - [LayoutManager-FlowLayout](https://github.com/xiangcman/LayoutManager-FlowLayout)快速利用RecyclerView的LayoutManager搭建流式布局
+   - [CornerCutLinearLayout](https://github.com/Devlight/CornerCutLinearLayout)圆角view
+   - [CircleMenu](https://github.com/hongyangAndroid/Android-CircleMenu)自定义ViewGroup实现的圆形旋转菜单，支持跟随手指旋转以及快速旋转。
+   - []()
+   
 * 动画库
     + Android Transitions 转场动画:[Transitions-Everywhere](https://github.com/andkulikov/Transitions-Everywhere)
     + View动画库:[ViewAnimator](https://github.com/florent37/ViewAnimator)
     + Activity动画:[Material-Animations](https://github.com/lgvalle/Material-Animations)
     + [recyclerview-animators](https://github.com/wasabeef/recyclerview-animators)
+    + [PathEffectTextView](https://github.com/dkmeteor/PathEffectTextView)
 
 * 工具框架：
+    - [滴滴开源的工具包DoraemonKit](https://github.com/didi/DoraemonKit)
+    - [TinyPinyin](https://github.com/promeG/TinyPinyin)
+    - [textImg](https://github.com/luoyesiqiu/textImg)图片文字化，像素化
+    - [DialogV3](https://github.com/kongzue/DialogV3)
+    - [PanelSwitchHelper](https://github.com/YummyLau/PanelSwitchHelper):一个帮助键盘平稳过渡到功能面板的框架，支持动画无缝衔接
     + 富文本工具:[XRichText](https://github.com/sendtion/XRichText)
     - 监听进度：[ProgressManager](https://github.com/JessYanCoding/ProgressManager)
     - 注解绑定view：[butterknife](https://github.com/JakeWharton/butterknife)
@@ -118,8 +132,9 @@ tags:
 
 * 插件 
     + [谷歌访问助手](https://github.com/haotian-wang/google-access-helper)
-    
-
+    + [一个远程数据接口代理服务](https://github.com/xCss/JsonBird)
+    + [一款Android Studio插件，帮助你快速添加依赖库和查询历史版本](https://github.com/wuyr/GoogleLibraryVersionQuerier)
 
 * Linux 
     + 命令行神器:[thefuck](https://github.com/nvbn/thefuck)
+    + [ADB Usage Complete / ADB 用法大全](https://github.com/mzlogin/awesome-adb)
